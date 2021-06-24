@@ -27,6 +27,10 @@
 (1)eid,和fp找个普通商品随便下单,然后抓包就能看到,这两个值可以填固定的 
 > 不会的话参考原作者的issue https://github.com/zhou-xiaojun/jd_mask/issues/22
 
+具体操作补充：
+1：配置信息config.ini：获取eid和fp
+使用谷歌浏览器，打开京东网站，登录，随意选择一商品下单去结算，进入结算页面后按F12，进入调试模式，切换到Console标签，在控制台输入_JdTdudfp，以获取eid和fp 
+
 (2)cookies_string,sku_id,DEFAULT_USER_AGENT(和cookie获取同一个地方就会看到.直接复制进去就可以了) 
 >这里注意每次扫码登陆后都需要重新获取cookies_string,其他两个不用  
 >sku_id我已经按照茅台的填好 
